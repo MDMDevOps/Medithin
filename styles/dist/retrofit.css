@@ -1,0 +1,82 @@
+/*!
+ * Layout
+ */
+/* line 6, ../retrofit.scss */
+.print {
+  display: none;
+  text-align: center;
+}
+
+/* line 10, ../retrofit.scss */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #808285;
+}
+
+/* line 20, ../retrofit.scss */
+.global_wrap {
+  min-width: none;
+  min-height: 100%;
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/table_bg.jpg") repeat-y top center;
+}
+
+/* line 25, ../retrofit.scss */
+.global_container_wrap {
+  position: relative;
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/top_bg.png") repeat-x top center;
+}
+
+/* line 29, ../retrofit.scss */
+.global_container {
+  position: relative;
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/top_center.png") no-repeat top center;
+}
+
+/* line 33, ../retrofit.scss */
+.global_container.one_day {
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/top_center_one_day.png") no-repeat top center;
+}
+
+/* line 36, ../retrofit.scss */
+.global_container_content {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 800px;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 43, ../retrofit.scss */
+.global_menu {
+  padding: 120px 10px 0 10px;
+  height: 155px;
+}
+
+/* line 47, ../retrofit.scss */
+.global_content {
+  padding: 20px 0px 30px;
+  float: left;
+  width: 100%;
+}
+
+/* line 53, ../retrofit.scss */
+.global_footer {
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/bg_footer.jpg") repeat-x top center;
+  position: relative;
+}
+
+/* line 57, ../retrofit.scss */
+.global_footer > div {
+  margin: 0px auto 0 auto;
+  width: 100%;
+  padding: 12px 0 0px 0;
+  background: url("http://www.medithinweightlossclinics.com/media/img/global/bottom.jpg") 0 8px no-repeat;
+}
+
+/*# sourceMappingURL=retrofit.css.map */
