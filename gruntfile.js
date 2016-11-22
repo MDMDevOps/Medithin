@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     sassDir     : 'styles',
                     cssDir      : 'styles/temp',
                     outputStyle : 'expanded',
-                    cacheDir    : 'styles/dist/.sass-cache',
+                    cacheDir    : 'styles/.sass-cache',
                     sourcemap   : true,
                     environment : 'development'
                 },
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     sassDir     : 'styles',
                     cssDir      : 'styles/temp',
                     outputStyle : 'compressed',
-                    cacheDir    : 'styles/dist/.sass-cache',
+                    cacheDir    : 'styles/.sass-cache',
                     sourcemap   : false,
                     environment : 'production'
                 },
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
                 map : true
             },
             retrofit : {
-                src  : 'styles/temp/retofit.css',
-                dest : 'styles/dist/retofit.min.css'
+                src  : 'styles/temp/retrofit.css',
+                dest : 'styles/dist/retrofit.css'
             },
         },
         // Clean temp files
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
             },
             cssPostProcess : {
                 files : 'styles/**/*.scss',
-                tasks : [ 'compass', 'newer:autoprefixer', 'clean' ]
+                tasks : [ 'compass:development', 'newer:autoprefixer', 'clean' ]
             },
             jsPostProcess : {
                 files : [ 'scripts/**/*.js', '!scripts/dist/*.js' ],
