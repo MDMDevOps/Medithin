@@ -1,5 +1,5 @@
 <div class="app-static-our_program clearfix">
-    <div class="col-left">
+    <div class="col-md-8">
         <h1 class="headline">Are You Ready To Lose Weight For Good?</h1>
 
         <p class="sepV20">
@@ -104,7 +104,7 @@
         </div>
     </div>
 
-    <div class="col-right text-center">
+    <div class="col-md-4 text-center">
         <?php $this->widget('w.wBannerPlace.wBannerPlace', array(
             'htmlOptions' => array('class' => 'sepV10'),
             'id_place' => CouponPlaces::PL_OUR_PROGRAM_SIDE,

@@ -1,6 +1,6 @@
 <div class="app-static-testimonials">
     <div class="clearfix">
-        <div class="col-left">
+        <div class="col-md-8">
             <h1 class="headline">Real Testimonials From Real Patients</h1>
 
             <p class="sepV20">Our patients are experiencing great results – they’re losing weight and increasing their
@@ -42,7 +42,7 @@
             </table>
         </div>
 
-        <div class="col-right text-center">
+        <div class="col-md-3 text-center">
             <?php $this->widget('w.wBannerPlace.wBannerPlace', array(
                 'htmlOptions' => array('class' => 'sepV10'),
                 'id_place' => CouponPlaces::PL_TESTIMONIALS_SIDE,
@@ -138,10 +138,8 @@
     </table>
 
     <hr/>
-
-    <table>
-        <tr>
-            <td style="width:33%;" class="text-left border-right valign-top">
+    <div class="clearfix">
+        <div class="col-md-4">
                 <p>
                     <em>"My self confidence has skyrocketed! Now I love going and trying on clothes, plus it's such a boost
                         to hear my friends and family comment on how great I look!
@@ -155,8 +153,9 @@
                         reality!&quot; *
                         <br/>
                         &nbsp;&nbsp;&nbsp;– Stephanie P. from Janesville</em>
-                </p></td>
-            <td style="width:33%;" class="text-left border-right valign-top">
+                </p>
+        </div>
+            <div class="col-md-4 testimonial-grid">
                 <p>
                     <em>"I love the Medithin program. I have more energy than I have ever had. I feel good every day and
                         just three days into the program I have noticed a difference on how clothes fit." *
@@ -170,8 +169,9 @@
                         to do more things now." *
                         <br/>
                         &nbsp;&nbsp;&nbsp;– Sheila M. from Fort Atkinson</em>
-                </p></td>
-            <td class="text-left valign-top">
+                </p>
+            </div>
+            <div class="col-md-4 testimonial-grid">
                 <p>
                     <em>"I am 500% more active and I spend a fraction of what I used to spend each week on food. My attitude
                         about what I put in my body is totally different.</em>
@@ -184,10 +184,9 @@
                         observe life, now I am in it with both feet!" *
                         <br/>
                         &nbsp;&nbsp;&nbsp;– Pat D. from Janesville</em>
-                </p></td>
-        </tr>
-    </table>
-
+                </p>
+            </div>
+        </div>
     <hr/>
 
     <table>
@@ -223,9 +222,8 @@
 
     <hr/>
 
-    <table>
-        <tr>
-            <td style="width:33%" class="text-left border-right valign-top">
+    <div class="clearfix">
+        <div class="col-md-4">
                 <p>
                     <em>"Losing weight is a commitment I made to myself and I kept it. My kids are so proud of me – that’s
                         the best feeling. I feel better, sleep better, and I have more energy. Seeing the changes in my
@@ -234,7 +232,7 @@
                     <br/>
                     &nbsp;
                 </p>
-
+                <hr>
                 <p>
                     <em>Medithin is a plan that was easy to follow and It reinforces a healthy lifestyle that is easy to
                         incorporate into any busy schedule. It’s a plan I can live by moving forward. The staff kept me
@@ -243,8 +241,9 @@
                         <br/>
                         – Nancy B. from Beloit</em>
                     <br/>
-                </p></td>
-            <td style="width:33%" class="text-left border-right valign-top">
+                </p><
+            </div>
+            <div class="col-md-4 testimonial-grid">
                 <p>
                     <em>"This is the greatest feeling of success that I have ever had on a program. I’ve learned how to eat
                         correctly and proportionately and I don’t have cravings for sweets anymore.</em>
@@ -265,8 +264,8 @@
                 <?php $this->widget('application.components.widgets.wTestimonials.wTestimonials', array(
                     'htmlOptions' => array('class' => 'sepV20'),
                 )); ?>
-            </td>
-            <td class="text-left valign-top">
+            </div>
+            <div class="col-md-4 testimonial-grid">
                 <p>
                     <em>"My experience so far has been wonderful. The weight has come off quickly and people are starting to
                         notice that I’m looking thinner. My joints don’t hurt, my back feels a lot better, and I feel I have
@@ -302,9 +301,9 @@
                         smarter and healthier choices in the food that goes in me. Thank you!" *
                         <br/>
                         – Julia V. from Juda</em>
-                </p></td>
-        </tr>
-    </table>
+                </p>
+            </div>
+        </div>
 </div>
 
 <?php $this->widget('w.wExitpopup.wExitpopup'); ?>

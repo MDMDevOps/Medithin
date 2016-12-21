@@ -1,8 +1,8 @@
 <?php $this->beginContent('//layouts/empty'); ?>
 	<div class="global_wrap app-layouts-clients">
     <div class="global_container_wrap2">
-        <div class="global_container2">
-            <div class="global_container_content">
+        <div class="global_container2_retrofit container">
+            <div class="global_container_content_retrofit">
                 <div class="global_menu">
 					<?php if(false == $this->menuTopHidden): ?>
 						<?php $this->widget(

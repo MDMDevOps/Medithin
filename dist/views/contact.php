@@ -6,7 +6,7 @@
 	CouponVisits::saveVisit(CouponPlaces::PL_CONTACT_FORM, CouponVisits::CPN_FIELD_VISIT);
 ?>
 <div class="app-static-contact">
-	<div class="col-left">
+	<div class="col-md-8">
         <p><img src="<?php echo $this->baseUrlImg; ?>/static/contact/learn_more.png" width="509" height="92" alt="Whould you like to learn more?" class="title"/></p>
 
         <p class="sepV30 font12">Please email us using the form below, or call 608-531-0400.</p>
@@ -42,7 +42,7 @@
         </div>
 	</div>
 
-	<div class="col-right">
+	<div class="col-md-4">
         <div itemscope itemtype="http://schema.org/LocalBusiness">
             <div itemprop="name" class="black14">Medithin Weight Loss Clinics</div>
             <div  itemprop="telephone" class="blue14b">608-531-0400</div>

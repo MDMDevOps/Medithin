@@ -1,5 +1,5 @@
 <div class="app-static-our_program clearfix">
-    <div class="col-left">
+    <div class="col-md-8">
         <h1 class="headline">Frequently Asked Questions</h1>
         <p>&nbsp;</p>
         <p><span class="blue14">What is unique about this weight loss program compared to all of the others out there?</span><br />
@@ -43,7 +43,7 @@
                 Please take a look at our list of helpful <span class="blue10"><a href="<?php echo $this->createUrl('/static/general/index', array('view' => 'resources')); ?>">resources</a></span> if you would like <a href="<?php echo $this->createUrl('/static/general/index', array('view' => 'resources')); ?>">additional information</a> on weight loss, health, and wellness.</em></p>
     </div>
 
-    <div class="col-right text-center">
+    <div class="col-md-4 text-center">
         <?php $this->widget('w.wBannerPlace.wBannerPlace', array(
             'htmlOptions' => array('class' => 'sepV10'),
             'id_place' => CouponPlaces::PL_FAQ_SIDE,

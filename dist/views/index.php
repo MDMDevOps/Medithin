@@ -1,5 +1,5 @@
 <div class="app-static-index">
-	<div class="col-left">
+	<div class="col-md-8">
 		<h1 class="normal">Since early 2011, we’ve been helping people in Southern Wisconsin lose weight and learn how to keep it off. Medithin offers a physician-supervised weight loss program that is safe, proven effective, and affordable. Patients are assessed, and their progress is monitored, by a physician and medical staff to ensure optimum care and support in reaching their weight loss goals. Go to  <a href="<?php echo $this->createUrl('/static/general/index', array('view'=>'our_program')); ?>">Our Program</a> to learn more and make sure you take a look at our  <a href="<?php echo $this->createUrl('/static/general/index', array('view'=>'testimonials')); ?>">Testimonials</a>.
 		</h1>
 
@@ -25,7 +25,7 @@
 			<a href="<?php echo $this->createUrl('/static/general/index', array('view'=>'our_program')); ?>"><img src="<?php echo $this->baseUrlImg; ?>/static/index/btn_continue.png" class="img-btn-continue" /></a>
 		</div>
 	</div>
-	<div class="col-right text-center">
+	<div class="col-md-4 facebook-cta">
 		<?php $this->widget('application.components.widgets.wTestimonials.wTestimonials'); ?>
 
 		<?php $this->widget('application.components.widgets.wBmi.wBmi', array('htmlOptions'=>array('class'=>'sepV20'))); ?>
