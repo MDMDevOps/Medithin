@@ -224,6 +224,30 @@ body {
         width: auto;
     }
 
+
+//Special Offer section, had to use important tags due to styles in divs
+.modal-dialog {
+    width: auto!important;
+    max-width: 720px;
+}
+
+.app-lightboxes-started199-optin {
+    width: auto!important;
+    max-width: 720px;
+}
+
+.optin-form {
+    width: auto!important;
+    max-width: 540px;
+}
+
+input#OptinForm_email {
+    width: auto;
+    max-width: 330px;
+}
+
+//END OF SPECIAL OFFER SECTION
+
 $primary-color : blue;
 $secondary-color : red;
 $tertiary-color : yellow;

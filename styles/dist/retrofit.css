@@ -264,4 +264,28 @@ body {
   width: auto;
 }
 
+/* line 229, ../retrofit.scss */
+.modal-dialog {
+  width: auto !important;
+  max-width: 720px;
+}
+
+/* line 234, ../retrofit.scss */
+.app-lightboxes-started199-optin {
+  width: auto !important;
+  max-width: 720px;
+}
+
+/* line 239, ../retrofit.scss */
+.optin-form {
+  width: auto !important;
+  max-width: 540px;
+}
+
+/* line 244, ../retrofit.scss */
+input#OptinForm_email {
+  width: auto;
+  max-width: 330px;
+}
+
 /*# sourceMappingURL=retrofit.css.map */
