@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -12,31 +12,17 @@ module.exports = function(grunt) {
     grunt.initConfig({
         // Reference package.json
         pkg : grunt.file.readJSON('package.json'),
-
-        // Compile SCSS with the Compass Compiler
-        compass : {
-            development : {
-                options : {
-                    sassDir     : 'styles',
-                    cssDir      : 'styles/temp',
-                    outputStyle : 'expanded',
-                    cacheDir    : 'styles/.sass-cache',
-                    sourcemap   : true,
-                    environment : 'development'
-                },
+        // Compile css
+        less: {
+            options: {
+              compress: true,
+              sourceMap: true,
             },
-            production : {
-                options : {
-                    sassDir     : 'styles',
-                    cssDir      : 'styles/temp',
-                    outputStyle : 'compressed',
-                    cacheDir    : 'styles/.sass-cache',
-                    sourcemap   : false,
-                    environment : 'production'
-                },
+            retrofit: {
+                files: { 'styles/temp/retrofit.css': 'styles/retrofit.less' }
             },
         },
- // Run Autoprefixer on compiled css
+ 		// Run Autoprefixer on compiled css
         autoprefixer: {
             options: {
                 browsers: ['last 3 version', '> 1%', 'ie 8', 'ie 9', 'ie 10'],
@@ -79,8 +65,8 @@ module.exports = function(grunt) {
               livereload: true,
             },
             cssPostProcess : {
-                files : 'styles/**/*.scss',
-                tasks : [ 'compass:development', 'newer:autoprefixer', 'clean' ]
+                files : 'styles/**/*.less',
+                tasks : [ 'less', 'newer:autoprefixer', 'clean' ]
             },
             jsPostProcess : {
                 files : [ 'scripts/**/*.js', '!scripts/dist/*.js' ],
